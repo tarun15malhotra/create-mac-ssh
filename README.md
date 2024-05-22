@@ -8,18 +8,23 @@ Remove the file id_rsa
 rm ~/.ssh/id_rsa
 
 1. Regenerate the SSH Key Pair:
+
 ssh-keygen -t rsa -b 2048 -C "tarun.appnox1@gmail.com"
 
 2. Check for Existing SSH Key Pairs:
+
 ls -l ~/.ssh/
 
 3. Use a Different File Path:
+
 ssh-keygen -t rsa -b 2048 -C "tarun.appnox1@gmail.com" -f ~/.ssh/id_rsa
 
 4. Start the SSH agent by running the following command:
+
 eval "$(ssh-agent -s)"
 
 5. Then add your SSH private key to the SSH agent:
+
 ssh-add ~/.ssh/id_rsa
 
 6: Copy the SSH Public Key
