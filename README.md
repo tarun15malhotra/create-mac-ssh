@@ -2,6 +2,7 @@
 Generate an SSH Key Pair Mac
 
 Password for all
+
 password that you have setup
 
 Remove the file id_rsa
@@ -43,7 +44,9 @@ In the Key field, paste the SSH public key you copied earlier.
 Click Add key.
 
 8: Test the SSH Connection
+
 ssh -T git@bitbucket.org
 
 9: Test the SSH Connection
+
 ssh -i ~/.ssh/id_rsa git@bitbucket.org
